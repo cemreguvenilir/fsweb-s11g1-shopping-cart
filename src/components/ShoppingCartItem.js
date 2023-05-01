@@ -13,7 +13,7 @@ const Item = (props) => {
       <ScCartItemDetails>
         <h2>{props.title}</h2>
         <p>$ {props.price}</p>
-        <button onClick={() => removeItem(props)}>Remove from cart</button>
+        <button onClick={() => removeItem(props.id)}>Remove from cart</button>
       </ScCartItemDetails>
     </ScCartItem>
   );
