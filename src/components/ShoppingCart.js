@@ -20,7 +20,7 @@ const ShoppingCart = () => {
   return (
     <div>
       {cart.map((item) => (
-        <Item key={item.id} {...item} />
+        <Item key={item.id} id={item.id} {...item} />
       ))}
 
       <ScCartCheckout>
